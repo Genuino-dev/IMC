@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" id="peso">
+    <input type="number" id="altura">
+    <p id="resultado"></p>
+    <button onclick="calculoImc()">Calcular</button>
+    <script>
+        function calculoImc(){
+            let peso = document.getElementById("peso").value
+            let altura = document.getElementById("altura").value
+
+            document.getElementById("resultado").innerText = peso/(altura*altura)
+
+        }
+    </script>
+</body>
+</html>
